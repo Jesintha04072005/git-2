@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All CSS Transforms (Hover Only)</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        background: #3498db;
+        color: #fff;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        transition: transform 0.5s ease;
+        font-size: 16px;
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>ALL CSS TRANSFORM PROPERTIES (HOVER EXAMPLES — NO JS)</h1>
+
+<!-- TRANSLATE -->
+<h2>Translate</h2>
+<div class="grid">
+
+    <div class="box translate">translate()</div>
+    <div class="box translateX">translateX()</div>
+    <div class="box translateY">translateY()</div>
+    <div class="box translateZ">translateZ()</div>
+    <div class="box translate3d">translate3d()</div>
+
+</div>
+
+<!-- ROTATE -->
+<h2>Rotate</h2>
+<div class="grid">
+
+    <div class="box rotate">rotate()</div>
+    <div class="box rotateX">rotateX()</div>
+    <div class="box rotateY">rotateY()</div>
+    <div class="box rotateZ">rotateZ()</div>
+    <div class="box rotate3d">rotate3d()</div>
+
+</div>
+
+<!-- SCALE -->
+<h2>Scale</h2>
+<div class="grid">
+
+    <div class="box scale">scale()</div>
+    <div class="box scaleX">scaleX()</div>
+    <div class="box scaleY">scaleY()</div>
+    <div class="box scaleZ">scaleZ()</div>
+    <div class="box scale3d">scale3d()</div>
+
+</div>
+
+<!-- SKEW -->
+<h2>Skew</h2>
+<div class="grid">
+
+    <div class="box skew">skew()</div>
+    <div class="box skewX">skewX()</div>
+    <div class="box skewY">skewY()</div>
+
+</div>
+
+<!-- PERSPECTIVE -->
+<h2>Perspective</h2>
+<div class="grid">
+
+    <div class="box perspective">perspective()</div>
+
+</div>
+
+<style>
+/* TRANSLATE */
+.translate:hover      { transform: translate(60px, 20px); }
+.translateX:hover     { transform: translateX(80px); }
+.translateY:hover     { transform: translateY(-40px); }
+.translateZ:hover     { transform: translateZ(60px); }
+.translate3d:hover    { transform: translate3d(40px, 20px, 40px); }
+
+/* ROTATE */
+.rotate:hover         { transform: rotate(360deg); }
+.rotateX:hover        { transform: rotateX(60deg); }
+.rotateY:hover        { transform: rotateY(60deg); }
+.rotateZ:hover        { transform: rotateZ(45deg); }
+.rotate3d:hover       { transform: rotate3d(1, 1, 0, 60deg); }
+
+/* SCALE */
+.scale:hover          { transform: scale(1.4); }
+.scaleX:hover         { transform: scaleX(2); }
+.scaleY:hover         { transform: scaleY(0.5); }
+.scaleZ:hover         { transform: scaleZ(1.4); }
+.scale3d:hover        { transform: scale3d(1.3, 0.7, 1.2); }
+
+/* SKEW */
+.skew:hover           { transform: skew(20deg, 10deg); }
+.skewX:hover          { transform: skewX(30deg); }
+.skewY:hover          { transform: skewY(-30deg); }
+
+/* PERSPECTIVE */
+.perspective:hover    { transform: perspective(300px) rotateX(45deg); }
+</style>
+
+</body>
+</html>

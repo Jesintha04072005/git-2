@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*vissible*/
+
+        .ff1{
+            display:flex;
+            position:relative;
+        }
+        #r1{
+            border:3px solid black;
+            width:100px;
+            height:100px;
+            margin-right:20px;
+        }
+
+        /* hidden*/
+
+        #r2{
+             border:3px solid;
+            width:100px;
+            height:100px;
+            margin-right:20px;
+            overflow:hidden;
+        }
+
+        /* scroll*/
+
+        #r3{
+             border:3px solid black;
+            width:100px;
+            height:100px;
+            overflow:scroll;
+            margin-right:20px;
+        }
+
+        /* auto*/
+
+        #r4{
+             border:3px solid;
+            width:100px;
+            height:100px;
+            overflow:auto;
+            margin-right:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--vissible-->
+<div class="ff1">
+ <div id="r1">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Impedit aperiam, animi commodi veniam doloremque
+          harum quisquam ex officiis fuga Lorem ipsum dolor 
+          sit amet consectetur adipisicing elit.
+           Expedita sequi dolorem saepe. Assumenda ratione non,
+            est deleniti qui nam facere.</p></div>
+      
+
+     <!--hidden-->
+     
+     <div id="r2">
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Impedit aperiam, animi commodi veniam doloremque
+          harum quisquam ex officiis fuga Lorem ipsum dolor 
+          sit amet consectetur adipisicing elit.
+           Expedita sequi dolorem saepe. Assumenda ratione non,
+            est deleniti qui nam facere.</p></div>
+    
+
+     <!--scroll-->
+     
+     <div id="r3">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Impedit aperiam, animi commodi veniam doloremque
+          harum quisquam ex officiis fuga Lorem ipsum dolor 
+          sit amet consectetur adipisicing elit.
+           Expedita sequi dolorem saepe. Assumenda ratione non,
+            est deleniti qui nam facere.</p></div>
+    
+
+     <!--auto-->
+
+     <div id="r4">
+     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Impedit aperiam, animi commodi veniam doloremque
+          harum quisquam ex officiis fuga Lorem ipsum dolor 
+          sit amet consectetur adipisicing elit.
+           Expedita sequi dolorem saepe. Assumenda ratione non,
+            est deleniti qui nam facere.</p></div> 
+ </div>
+           
+</body>
+</html>
